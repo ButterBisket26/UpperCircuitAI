@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: ankane/pgvector:latest
+    container_name: uppercircuitai_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: uppercircuitai
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: uppercircuitai_api
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgrespassword@db:5432/uppercircuitai
+      - GROQ_API_KEY=gsk_your_key_here
+      # local mounts will store local cache indexing
+      - BM25_INDEX_PATH=/app/bm25_index.pkl
+    volumes:
+      - .env:/app/.env
+    depends_on:
+      - db
+
+volumes:
+  pgdata:

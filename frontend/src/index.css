@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 0.7);
+}
+
+/* Base custom classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Base variables - Dark Theme (Default) */
+:root {
+  --bg-app: #020617; /* slate-950 */
+  --bg-panel: rgba(15, 23, 42, 0.65); /* slate-900/65 */
+  --bg-nav: rgba(2, 6, 23, 0.8);
+  --border-primary: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.05);
+  --text-primary: #f8fafc; /* slate-50 */
+  --text-secondary: #94a3b8; /* slate-400 */
+  --text-muted: #64748b; /* slate-500 */
+  --bg-card: rgba(30, 41, 59, 0.2);
+  --bg-card-hover: rgba(30, 41, 59, 0.4);
+  --bg-input: rgba(2, 6, 23, 0.6);
+  --border-input: #1e293b;
+  --bg-nav-btn-hover: #0f172a;
+  --bg-highlight: rgba(245, 158, 11, 0.25); /* amber-500/25 */
+  --text-highlight: #fcd34d; /* amber-300 */
+  --border-highlight: rgba(245, 158, 11, 0.4);
+}
+
+/* Light Theme Variables */
+.light {
+  --bg-app: #f8fafc; /* slate-50 */
+  --bg-panel: rgba(255, 255, 255, 0.85);
+  --bg-nav: rgba(255, 255, 255, 0.9);
+  --border-primary: rgba(0, 0, 0, 0.08);
+  --border-card: rgba(0, 0, 0, 0.05);
+  --text-primary: #0f172a; /* slate-900 */
+  --text-secondary: #475569; /* slate-600 */
+  --text-muted: #64748b; /* slate-500 */
+  --bg-card: rgba(241, 245, 249, 0.9);
+  --bg-card-hover: rgba(226, 232, 240, 0.9);
+  --bg-input: #ffffff;
+  --border-input: #cbd5e1; /* slate-300 */
+  --bg-nav-btn-hover: #f1f5f9;
+  --bg-highlight: rgba(217, 119, 6, 0.15); /* amber-600/15 */
+  --text-highlight: #78350f; /* amber-900 */
+  --border-highlight: rgba(217, 119, 6, 0.4);
+}
+
+/* Theme Utility Classes */
+.theme-bg {
+  background-color: var(--bg-app) !important;
+  color: var(--text-primary) !important;
+}
+
+.theme-panel {
+  background: var(--bg-panel) !important;
+  border-color: var(--border-primary) !important;
+}
+
+.theme-nav {
+  background-color: var(--bg-nav) !important;
+  border-color: var(--border-primary) !important;
+}
+
+.theme-border {
+  border-color: var(--border-primary) !important;
+}
+
+.theme-border-input {
+  border-color: var(--border-input) !important;
+}
+
+.theme-text-primary {
+  color: var(--text-primary) !important;
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.theme-text-muted {
+  color: var(--text-muted) !important;
+}
+
+.theme-card {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-card) !important;
+}
+
+.theme-card-hover:hover {
+  background-color: var(--bg-card-hover) !important;
+}
+
+.theme-input {
+  background-color: var(--bg-input) !important;
+  border-color: var(--border-input) !important;
+  color: var(--text-primary) !important;
+}
+
+.theme-bg-btn-hover:hover {
+  background-color: var(--bg-nav-btn-hover) !important;
+}
+
+.theme-divider {
+  border-color: var(--border-primary) !important;
+}
+
+.theme-highlight {
+  background-color: var(--bg-highlight) !important;
+  color: var(--text-highlight) !important;
+  border-color: var(--border-highlight) !important;
+}

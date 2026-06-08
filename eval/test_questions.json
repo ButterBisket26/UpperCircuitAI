@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What was Infosys' consolidated revenue for Q3FY25?",
+    "ground_truth": "Infosys reported a consolidated revenue of Rs 38,821 crore for the quarter ended December 31, 2024 (Q3FY25).",
+    "ticker": "INFY"
+  },
+  {
+    "question": "What was the operating margin of Infosys in Q3FY25?",
+    "ground_truth": "Infosys reported an operating margin of 20.5% for Q3FY25.",
+    "ticker": "INFY"
+  },
+  {
+    "question": "How much net profit did Infosys report in Q3FY25 and what was the growth YoY?",
+    "ground_truth": "Infosys reported a net profit of Rs 6,106 crore for Q3FY25, which represents a growth of 2.2% year-on-year.",
+    "ticker": "INFY"
+  },
+  {
+    "question": "What was the Year-on-Year (YoY) constant currency revenue growth for Infosys in Q3FY25?",
+    "ground_truth": "Infosys' constant currency (CC) revenue growth was 3.1% YoY in Q3FY25.",
+    "ticker": "INFY"
+  },
+  {
+    "question": "What is Infosys' revised revenue growth guidance for the full fiscal year FY25?",
+    "ground_truth": "Infosys revised its FY25 constant currency revenue guidance to 3.75%-4.5%.",
+    "ticker": "INFY"
+  },
+  {
+    "question": "What was TCS' consolidated revenue in Q3FY25?",
+    "ground_truth": "TCS reported a consolidated revenue of Rs 60,583 crore for Q3FY25, showing an increase of 4.5% YoY.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "What was TCS' net profit for Q3FY25?",
+    "ground_truth": "TCS reported a consolidated net profit of Rs 11,053 crore for the quarter ended December 31, 2024.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "What was the operating margin of TCS in Q3FY25?",
+    "ground_truth": "TCS achieved an operating margin of 25.0% in Q3FY25.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "How did TCS' India market perform in terms of YoY revenue growth in Q3FY25?",
+    "ground_truth": "TCS reported a strong revenue growth of 23.4% YoY in the India business market during Q3FY25.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "What was the attrition rate reported by TCS for IT services in Q3FY25?",
+    "ground_truth": "The LTM (Last Twelve Months) attrition rate for IT services at TCS was 11.2% in Q3FY25.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "What was Reliance Industries' consolidated revenue for Q3FY25?",
+    "ground_truth": "Reliance Industries reported a consolidated revenue of Rs 2,48,160 crore for Q3FY25.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was the consolidated EBITDA of Reliance Industries in Q3FY25?",
+    "ground_truth": "Reliance Industries reported a consolidated EBITDA of Rs 40,650 crore for Q3FY25.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was the net profit of Reliance Industries in Q3FY25?",
+    "ground_truth": "Reliance Industries reported a consolidated net profit of Rs 19,340 crore for the quarter ended December 31, 2024.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was Jio's ARPU (Average Revenue Per User) in Q3FY25?",
+    "ground_truth": "Jio reported an ARPU of Rs 195.1 per month in Q3FY25.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "How many subscribers did Jio have at the end of Q3FY25?",
+    "ground_truth": "Jio's subscriber base reached 485.5 million at the end of Q3FY25.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was the revenue of Reliance Retail in Q3FY25?",
+    "ground_truth": "Reliance Retail reported a gross revenue of Rs 83,060 crore for Q3FY25.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was the EBITDA of Reliance Retail in Q3FY25?",
+    "ground_truth": "Reliance Retail's EBITDA for Q3FY25 was Rs 6,015 crore.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "What was the revenue of Reliance Oil-to-Chemicals (O2C) segment in Q3FY25?",
+    "ground_truth": "The revenue for Reliance Industries' O2C segment in Q3FY25 was Rs 1,41,230 crore.",
+    "ticker": "RELIANCE"
+  },
+  {
+    "question": "How did TCS' BFSI vertical perform in Q3FY25?",
+    "ground_truth": "TCS reported that BFSI vertical showed signs of stabilization, growing by 1.8% YoY in CC terms.",
+    "ticker": "TCS"
+  },
+  {
+    "question": "What was Infosys' active client count in Q3FY25?",
+    "ground_truth": "Infosys reported an active client count of 1,864 clients in Q3FY25.",
+    "ticker": "INFY"
+  }
+]
