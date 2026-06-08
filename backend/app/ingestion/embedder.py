@@ -16,12 +16,10 @@ class DocumentEmbedder:
         if self.model is None:
             logger.info(f"Embedder: Loading model {self.model_name}...")
             
-            # Optimize PyTorch CPU threading to prevent CPU thrashing
+            # Optimize PyTorch CPU threading to prevent CPU thrashing in container/cgroup environments
             import torch
-            import os
-            num_threads = min(os.cpu_count() or 4, 8)
-            torch.set_num_threads(num_threads)
-            logger.info(f"Embedder: Configured PyTorch to use {num_threads} CPU threads for local inference.")
+            torch.set_num_threads(1)
+            logger.info("Embedder: Configured PyTorch to use 1 CPU thread for local inference.")
             
             self.model = SentenceTransformer(self.model_name)
             logger.info("Embedder: Model loaded successfully.")
