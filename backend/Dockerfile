@@ -24,8 +24,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code files
 COPY . .
 
-# Expose backend port
-EXPOSE 8000
+# Expose Hugging Face Spaces default port
+EXPOSE 7860
 
-# Execute server command
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Execute server command on port 7860
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
