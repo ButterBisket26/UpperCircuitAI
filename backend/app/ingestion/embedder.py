@@ -125,7 +125,7 @@ class DocumentEmbedder:
         embeddings = self.model.encode(
             formatted_texts,
             batch_size=32,
-            show_progress_bar=False,
+            show_progress_bar=True,
             normalize_embeddings=True
         )
         
